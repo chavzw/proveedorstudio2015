@@ -1,0 +1,7 @@
+﻿@*@model IEnumerable<sistema.Models.Proveedor>*@
+@model sistema.Viewmodels.ListaProveedorViewModel
+  
+@foreach (var proveedor in Model.Proveedor)
+{
+    @Html.Partial("DesplegarProveedores", proveedor)
+}

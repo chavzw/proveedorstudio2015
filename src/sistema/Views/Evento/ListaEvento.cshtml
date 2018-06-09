@@ -1,0 +1,6 @@
+﻿@model sistema.Viewmodels.ListaEventoViewModel
+
+@foreach (var evento in Model.Eventos)
+{
+    @Html.Partial("DesplegarEvento", evento)
+}
